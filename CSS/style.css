@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+.carrusel{
+    margin-top: -20%;
+    max-width: 40%;
+}
+.cubo3d{
+    margin-top: -17%;
+
+}
+.card{
+margin-top: -3vw !important;
+    background-image: url(IMG/anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-size: 100vw;
+    height: 50vw;
+
+color: white !important;
+margin-top: 5%;
+}
+
+
+
+.card-img-top{
+    margin-top: 10vw;
+        border-radius: 50vw !important;
+        border: solid black 5px;
+        width: 250px;
+        height: 250px;
+        -webkit-border-radius: 50vw !important;
+        -moz-border-radius: 50vw !important;
+        -ms-border-radius: 50vw !important;
+        -o-border-radius: 50vw !important;
+}
+.presentacion{
+    align-items: center !important;
+margin-left: 50vw !important;
+}
+.aside{
+    margin-top: -3%;
+    justify-content: center;
+    text-align: center;
+}
+.enfasis{
+    position: relative;
+    display: inline-block;
+}
+/* Responsive 1920 */
+@media only screen and (max-width: 1920px) {
+
+    .infe{
+    width: 50% !important;
+    text-align: center !important;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+
+.formulario{
+    margin-top: -35% !important;
+    
+}
+/* Responsive 1080 */
+@media only screen and (min-width: 1080px){
+    footer{
+        margin-top: 50%;
+    }
+
+}
+/* Responsive 768 */
+@media only screen and (min-width: 768px){
+    footer
+    {
+        margin-top: 30% !important;
+    }
+    .carrusel{display: block !important;
+        width: 50%;
+        height: 50%;
+    }
+    .pimg{
+        display: none !important;
+    }
+
+}
+
+@media only screen and (min-width: 1px) { 
+    .card{
+        margin-top: -3vw !important;
+            background-image: url(IMG/anas-alshanti-feXpdV001o4-unsplash.jpg);
+            background-size: 100vw;
+            height: 70vw;
+        color: white !important;
+        margin-top: 5%;
+        }
+        footer{
+            margin-top: 35%;
+        }
+        
+        
+        .card-img-top{
+            margin-top: 10vw;
+                border-radius: 50vw !important;
+                border: solid black 5px;
+                width: 150px;
+                height: 150px;
+                -webkit-border-radius: 50vw !important;
+                -moz-border-radius: 50vw !important;
+                -ms-border-radius: 50vw !important;
+                -o-border-radius: 50vw !important;
+        }
+    .carrusel{
+        display: none;
+    }
+    .cartaprincipal{
+text-align: center;
+    }
+
+
+
+    .textocarta{
+        text-align: center;
+    justify-content: center;
+    }
+main{
+    margin-top: 25%;
+
+}
+
+h1{text-align: center;}
+.portafolio{ 
+display: flex;
+flex: auto;
+text-align: center;
+
+      }
+  .pimg{
+   margin-bottom: 15%;
+    max-width: 50vw;
+    max-height: 50vw;
+  }
+
+
+.formulario{
+max-width: 70%;
+    }
+    .enviarpregunta{
+        width: 50%;
+    }
+
+footer{
+text-align: center;
+}
+.portafolio2{
+    display: none !important;
+}
+}
+
+
+
+/* Efectos */
+/* Acercamiento */
+img.acercamiento {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.acercm {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+    5-ms-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+}
+/* Efecto zoom */
+img.zoom {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+.transition {
+    -webkit-transform: scale(1.5); 
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* Efecto cubo 3D */
+  .contenedor{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    animation: girar 15s ease-in-out alternate infinite;
+}
+
+.cara{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backface-visibility: hidden;
+}
+
+.cara img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cara1{
+    transform: translateZ(100px);
+}
+
+.cara2{
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cara3{
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px)
+}
+
+.cara4{
+    transform: rotateX(180deg) rotateZ(-90deg) translateZ(100px);
+}
+
+.cara5{
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+
+.cara6{
+    transform: rotateX(-90deg) translateZ(100px) rotateZ(-90deg);
+}
+
+
+@keyframes girar {
+    0%{
+        transform: none;
+    }
+    13%,16.6%{
+        transform: rotateY(-90deg);
+    }
+    301%,33.33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    46%,49.999%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+    63%,66%{
+        transform: rotateY(90deg);
+    }
+    80%,83%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    97%,100%{
+        transform: none;
+    }
+}
+
+/* Fin efecto cubo 3D */
+
+
+#subrayado-color-porta::before{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position:absolute;
+    bottom: 0;
+    z-index: -1;
+    background-color: yellow;
+    animation: var(--animacion-info-personal);
+    -webkit-animation: var(--animacion-info-personal);
+}
+#subrayado-color-info-personal::before{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position:absolute;
+    bottom: 0;
+    z-index: -1;
+    background-color: yellow;
+    animation: var(--animacion-info-personal);
+    -webkit-animation: var(--animacion-info-personal);
+}
+/* efecto subrayado */
+@keyframes subrayado{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes subrayado-reverse{
+    0%{
+        width: var(--animacion-width);
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+
+
+
+
